@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  height: 420px;
+}
+main {
+  width: 250px;
+}
+#bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  background: url("http://cover.acfunwiki.org/cover.php") -75px 0;
+  opacity: 0.7;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  opacity: 0.8;
+}
+ul li {
+  cursor: default;
+  background-color: #eeeae0;
+  display: block;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  border-left: solid 4px #ee796e;
+  -webkit-transition: ease 0.1s !important;
+  font-size: 20px;
+  color: #000;
+}
+ul li:hover {
+  background-color: #b3b526;
+  border-left: solid 10px #58d1ff;
+  -webkit-transition: ease 0.2s !important;
+  transition: ease 0.2s !important;
+  width: 160px;
+  color: #fff;
+}
+#temp {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: #fff;
+}
+#buttons {
+  padding-left: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#buttons span {
+  text-align: center;
+  width: 50px;
+  height: 25px;
+  background-color: #ffefbb;
+  opacity: 1;
+  box-sizing: border-box;
+  transition: all 0.1s linear;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 2px;
+  margin-left: 3px;
+}
+#buttons span:hover {
+  background-color: #ffd8a6;
+  -webkit-transition: ease 0.2s !important;
+}
+#buttons span:active {
+  background-color: #dfbd91;
+  -webkit-transition: ease 0.2s !important;
+}
