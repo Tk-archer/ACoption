@@ -1,0 +1,40 @@
+{
+  "name": "AC首页自定义",
+  "description": "AC首页自定义",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "permissions": [
+  "tabs"
+],
+  "content_scripts": [
+    {
+      "matches": ["*://www.acfun.tv//*"],
+      "js": [
+        "js/lib/jquery-2.1.4.min.js",
+        "js/message.js",
+        "js/install.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icons38.png"
+    },
+    "default_title": "我的",
+    "default_popup": "view/option.html"
+  },
+  "background": {
+    "scripts": [
+      "js/lib/jquery-2.1.4.min.js",
+      "js/message.js",
+      "js/back.js"
+    ]
+  },
+  "icons": {
+    "128": "images/icon128.png",
+    "48": "images/icon48.png",
+    "64": "images/icon64.png"
+  },
+  "offline_enabled": true
+}
